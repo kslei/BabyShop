@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <title>Nastyashop</title>
+  <link rel="icon" href="img/logo2.png" />
+</head>
+<body>
+  <header class="header">
+  <div class="wrapper">
+    <div class="logo">
+      <img class="logo__img" src="img/logo2.png" alt="logo" />
+    </div>
+    <div class="lang">
+      <button class="lang__button" onclick="">
+        <i class="fa fa-globe"></i>
+      </button>
+      <div class="lang__menu">
+        <button class="lang__menu__button" onclick="">Eng</button>
+        <button class="lang__menu__button" onclick="">Ru</button>
+      </div>
+    </div>
+    <div class="search">
+      <i class="fa fa-search"></i>
+      <input class="input" type="text" placeholder="Search" value="" />
+    </div>
+    <div class="contacts">
+      <i class="fa fa-phone"></i>
+      <div class="phone">
+        <a href="#">+380680000000</a>
+        <a href="#">+380990000000</a>
+      </div>
+    </div>
+    <div class="user">
+      <div class="shopping">
+        <i class="fa fa-heart"></i>
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+      <div class="userInput">
+        <i class="fa fa-user-circle" onclick=isModalOpen()></i>
+      </div>
+    </div>
+  </div>
+</header>
+  <nav class="nav">
+  <div class="wrapper">
+
+    <div class="list">
+      <div class="list__mob">
+        <a href="#">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div class="list__menu">
+        <button class="list__menu__button">Shipping and payment</button>
+        <button class="list__menu__button">About Us</button>
+        <button class="list__menu__button">Contacts</button>
+        <button class="list__menu__button">Warranty and service</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div class="content">
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <div class="breadcrumbs__container">Breadcrumbs</div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="wrapper">
+        <section class="modal">
+  <div class="modal-head">
+    <button class="close" onclick=isModalClose()>
+      <i class="fa fa-close"></i>
+    </button>
+  </div>
+  <div class="modal-form">
+    <p class="modal-form__label">Enter Login</p>
+    <input class="modal-form__input" type="login" onchange="" type="text" placeholder="Login" />
+  </div>
+  <div class="modal-form">
+    <p class="modal-form__label">Enter Password</p>
+    <input class="modal-form__input" type="password" onchange="" type="text" placeholder="Password" />
+  </div>
+  <div class="modal-form">
+    <p class="modal-form__label">Enter Email</p>
+    <input class="modal-form__input" onchange="" type="text" placeholder="Email" />
+  </div>
+  <div class="modal-button">
+    <button class="modal-button__button">Register</button>
+    <button class="modal-button__button">Sign In</button>
+    <button class="modal-button__button" onclick=isModalClose()>Close</button>
+  </div>
+</section>
+        <div class="aside">
+          <button type="button" class="collapsible">
+            <p class="title">Catalog</p>
+          </button>
+          <div class="links">
+            
+          </div>
+        </div>
+        <div class="main">
+          <div class="title">Welcome</div>
+          <div class="table">
+            <div class="slider">
+              <div class="slider__timer"></div>
+              <div class="slider__galery">
+                <div class="slide">
+                  <div class="slide__image">
+                    <img src="./img/doll.jpg" alt="Dolls">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__image">
+                    <img src="./img/toy car.jpg" alt="Toy cars">                  
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__image">
+                    <img src="./img/pop it.jpg" alt="Pop it">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__image">
+                    <img src="./img/bike.jpeg" alt="Bicycles">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="slide__image">
+                    <img src="./img/shuffed toys.jpg" alt="Shuffed toys">
+                  </div>
+                </div>
+                <div class="slidertrans"></div>
+              </div>
+                <div class="slidernav">
+                  <button class="prev"><img class="icon" src="./img/leftgrey.png" alt="prev"/></button>
+                  <button class="play"></button>
+                  <button class="next"><img class="icon" src="./img/Rightgrey.png" alt="next"/></button>
+                </div>
+              
+            </div>
+            <div class="products">
+              <div class="products-title"></div>
+              <div class="category-listing">
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      
+
+    </section>
+    <section class="subscribe">
+      <div class="wrapper">
+        <div class="subscribe-text">
+          <p class="subscribe-text__title">Do you want to be the first to know about promotions and discounts?</p>
+          <p>Subscribe to our newsletter</p>
+        </div>
+        <div class="mail-input">
+          <input class="input" type="text" placeholder="Enter Email">
+        <i class="fa fa-envelope" data-title="Subscribe"></i>
+        </div>
+        
+        
+      </div>
+    </section>
+  </div>
+  
+  <futor class="futor">
+  <div class="wrapper">
+    <div class="info">
+      <button type="button" class="collapsible">
+        <p class="title">Contacts</p>
+      </button>
+      <div class="links">
+        <span class="row">
+          <img class="icon" src="./img/Kyivstar.png" alt="icon Kyivstar" />
+          <a class="text" href="tel:+380684429917">+38(068)442-9-917</a>
+        </span>
+        <span class="row">
+          <img class="icon" src="./img/Vodafone.png" alt="icon Vodafone" />
+          <a class="text" href="tel:+380990000000">+38(099)000-0-000</a>
+        </span>
+        <span class="row">
+          <img class="icon" src="./img/viber.png" alt="icon Viber" />
+          <a class="text"  href="viber://chat?number=380680000000">+380990000000</a>
+        </span>
+        <span class="row">
+          <img class="icon" src="./img/map-location.png" alt="icon Viber" />
+          <p class="text">Sobornyi Avenue, 300, Zaporizhzhia, 69000</p>
+        </span>
+      </div>
+    </div>
+    <div class="info">
+      <button type="button" class="collapsible">
+        <p class="title">Schedule</p>
+      </button>
+      <div class="links">
+        <span class="row">
+          <p>Store opening hours:</p>
+          <p class="text">9:00 - 19:00</p>
+        </span>
+        <span class="row">
+          <p>Lunch break:</p>
+          <p class="text">13:00 - 13:30</p>
+        </span>
+        <span class="row">
+          <p>Day off:</p>
+          <p class="text">Sunday</p>
+        </span>
+      </div>
+    </div>
+
+
+  </div>
+</futor>
+  <script src="./js/script.min.js"></script>
+</body>
+</html>
