@@ -10211,6 +10211,12 @@ body {
   }
 }
 
+@media (max-width: 776px) {
+  .contacts {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .catalog {
     opacity: 0;
