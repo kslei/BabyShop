@@ -10044,7 +10044,6 @@ readers do not read off random characters that represent icons */
 .category__image img,
 .cart__image img {
   aspect-ratio: 3/2;
-  height: 100%;
   border-radius: 4px;
   -o-object-position: center;
   object-position: center;
