@@ -256,6 +256,7 @@ function setProduct (cart) {
                                 <img src="`+ cart[11] +`" alt="photo" id="img"/>
                                 <div class="age">`+ cart[7] +`</div>
                       </div>
+                      
                       <div class="product__value">
                         <div>
                           <p class="product__title">`+ cart[0] +`</p>
