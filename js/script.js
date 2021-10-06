@@ -274,11 +274,7 @@ if (categoryListing != null) {
   category.addEventListener("click", () => onCategory(item));  
 });
 }
-/*else {
-  let div = document.createElement("div");
-  div.innerHTML += "Productname";
-  links.append(div);
-}*/
+
 function setCart(value) {
   let cart = document.createElement("div");
   cart.className = "cart";
