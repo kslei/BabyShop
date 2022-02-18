@@ -239,9 +239,10 @@ isModalClose = (isModal) => {
   modal.style.display = "none";
 }
 const usproduct = document.querySelector(".product-col");
+let breadcrumb = document.querySelector(".breadcrumb");
 if (usproduct !== null) {
   setProduct(JSON.parse(sessionStorage.getItem("cart")));
-  
+  setBreadcrumb(JSON.parse(sessionStorage.getItem("cart"))[0]);
 }
 function setProduct (cart) {
   console.log("cart", cart);
@@ -291,6 +292,7 @@ if (productImage !== null) {
   productImage.addEventListener("click", () => isImgModalOpen(isImgModal));
 }
 
+
 //const links = document.querySelectorAll(".links");
 const filter = document.querySelectorAll(".filter");
 const production = document.querySelector(".products");
@@ -300,6 +302,7 @@ const title = document.querySelector(".products-title");
 const filterbutton = document.querySelector(".button");
 const allowedName = [];
 const allowedManufacturer = [];
+//const breadcrumb = document.querySelector(".breadcrumb");
 document.querySelector(".logo").addEventListener("click", () => {window.location.href="./index.html"});
 
 console.log("categoryListing", categoryListing);
@@ -340,7 +343,7 @@ function setCart(value) {
                     <img src="`+ value[11] +`"/>
                     </div>
                     <div class="cart__productname">`+ value[0] +`</div>
-                    <p class="cart__price">Price: <span class="cart__value">$`+ value[4] +`</span></p>
+                    <p class="cart__price">price: <span class="cart__value">$`+ value[4] +`</span></p>
                     `;
   cart.addEventListener("click", () => onCart(value));
 }
@@ -359,6 +362,13 @@ if (cartlisting != null) {
   setCategory(JSON.parse(sessionStorage.getItem("categoryName")));
 }
 
+function setBreadcrumb (item) {
+  let breadcrumbItem = document.createElement ("span");
+  breadcrumbItem.className += "breadcrumb__item";
+  breadcrumb.append(breadcrumbItem);
+  breadcrumbItem.innerHTML = item;
+}
+
 function setCategory (categoryName) {
   console.log("categoryName", categoryName);
   title.innerHTML = categoryName;
@@ -367,6 +377,8 @@ function setCategory (categoryName) {
   let name =[];
   let manufacturer = [];
   
+  setBreadcrumb(categoryName);
+
   product.forEach((item) => {
     let value = Object.values(item);
     console.log("value", value);

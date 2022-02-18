@@ -17,11 +17,11 @@
       <img class="logo__img" src="img/logo2.png" alt="logo" />
     </div>
     <div class="search">
-      <i class="fa fa-search"></i>
+      <i class="icon-search"></i>
       <input class="input" type="text" placeholder="Search" value="" />
     </div>
     <div class="contacts">
-      <i class="fa fa-phone"></i>
+      <i class="icon-phone"></i>
       <div class="phone">
         <a href="tel: +380680000000">+380680000000</a>
         <a href="tel: +380990000000">+380990000000</a>
@@ -29,11 +29,11 @@
     </div>
     <div class="user">
       <div class="shopping">
-        <i class="fa fa-heart"></i>
-        <i class="fa fa-shopping-cart"></i>
+        <i class="icon-heart"></i>
+        <i class="icon-shopping-cart"></i>
       </div>
       <div class="userInput">
-        <i class="fa fa-user-circle" onclick=isModalOpen()></i>
+        <i class="icon-user-circle" onclick=isModalOpen()></i>
       </div>
     </div>
   </div>
@@ -44,7 +44,7 @@
     <div class="list">
       <div class="list__mob">
         <a href="#">
-          <i class="fa fa-bars"></i>
+          <i class="icon-bars"></i>
         </a>
       </div>
       <div class="list__menu">
@@ -60,7 +60,13 @@
   <div class="content">
     <section class="breadcrumbs">
       <div class="wrapper">
-        <div class="breadcrumbs__container">Breadcrumbs</div>
+        <div class="breadcrumbs__container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb__item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb__item"><a href="#" aria-current="page">Category</a></li>
+            
+          </ol>
+        </div>
       </div>
     </section>
     <section class="container">
@@ -68,7 +74,7 @@
         <section class="modal">
   <div class="modal-head">
     <button class="close" onclick=isModalClose()>
-      <i class="fa fa-close"></i>
+      <i class="icon-times"></i>
     </button>
   </div>
   <div class="modal-form">
@@ -154,19 +160,17 @@
       </div>
     </section>
     <section class="subscribe">
-      <div class="wrapper">
-        <div class="subscribe-text">
-          <p class="subscribe-text__title">Do you want to be the first to know about promotions and discounts?</p>
-          <p>Subscribe to our newsletter</p>
-        </div>
-        <div class="mail-input">
-          <input class="input" type="text" placeholder="Enter Email">
-          <i class="fa fa-envelope" data-title="Subscribe"></i>
-        </div>
-
-
-      </div>
-    </section>
+  <div class="wrapper">
+    <div class="subscribe-text">
+      <p class="subscribe-text__title">Do you want to be the first to know about promotions and discounts?</p>
+      <p>Subscribe to our newsletter</p>
+    </div>
+    <div class="mail-input">
+      <input class="input" type="text" placeholder="Enter Email">
+      <i class="icon-envelope" data-title="Subscribe"></i>
+    </div>
+  </div>
+</section>
   </div>
 
   <futor class="futor">
